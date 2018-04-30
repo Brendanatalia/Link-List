@@ -16,9 +16,8 @@ linkedlist()
 head=NULL;
 tail=NULL;
 }
-//kita pake head and tail aja yaa guys, oke mi, okelah mi
 
- void buatnode(int value){ //ini tambah data di belakang gaesss
+ void buatnode(int value){ 
     node *baru =new node;
     baru->data=value;
     baru->next=NULL;
@@ -104,7 +103,7 @@ void hapusLetak(int letak)
 };
 
 int main(){
-	linkedlist obj; //kurang linkednya
+	linkedlist obj; 
 	obj.buatnode(27);
 	obj.buatnode(6);
 	obj.buatnode(13);
