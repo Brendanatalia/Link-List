@@ -97,7 +97,7 @@ void hapusLetak(int letak)
     for(int i=1;i<letak;i++)
     {
       sebelum=sesudah;
-      sebelum=sesudah->next;
+      sesudah=sesudah->next;
     }
     sebelum->next=sesudah->next;
   }
