@@ -12,6 +12,13 @@ void init()
     head = NULL;
 }
 
+bool isEmpty()
+{
+    if (head == NULL)
+        return 1;
+    return 0;
+}
+
 void insertDepan(int databaru);
 void insertBelakang(int databaru);
 void deleteDepan();
@@ -28,19 +35,14 @@ int main(){
 		cin>>data;
 		insertDepan(data);
 	}
-//	insertBelakang(in);
-	/*deleteDepan();
-	deleteBelakang();
-	insertNode();
-	deleteNode();*/
-}
+	
 
 void insertDepan(int databaru){
 	node *baru;
 	baru= new node();
 	baru->data=databaru;
 	baru->next=baru;
-	if(head==NULL){
+	if(isEmpty()==1){
 		head=baru;
 		head->next=head;	
 	}
@@ -72,7 +74,7 @@ void insertBelakang(int databaru){
 	baru= new node();
 	baru->data=databaru;
 	baru->next=NULL;
-	if(head==NULL){
+	if(isEmpty()==1){
 		head=baru;
 		head->next=NULL;	
 	}
@@ -96,3 +98,25 @@ void insertBelakang(int databaru){
     }
 
 }
+	void hapusDepan (){
+	TNode *hapus,*bantu;
+	if (isEmpty()==0){
+		int d;
+		hapus = head;
+		d = head->data;
+		if(head->next != head){
+			bantu = head;
+			while(bantu->next!=head){
+				bantu=bantu->next;
+			}
+			head = head->next;
+			delete hapus;
+			bantu->next = head;
+		}else{
+			head=NULL;
+		}
+		cout<<"terhapus";
+	} else cout<<"Masih kosong“;
+}
+
+	
