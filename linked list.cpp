@@ -89,3 +89,15 @@ void hapusbelakang()
     sebelum->next=NULL;
     delete sesudah;
   }
+void hapusLetak(int letak)
+  {
+    node *skrg=new node;
+    node *sbl=new node;
+    skrg=head;
+    for(int i=1;i<letak;i++)
+    {
+      sbl=skrg;
+      skrg=skrg->next;
+    }
+    sbl->next=skrg->next;
+  }
