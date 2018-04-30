@@ -101,3 +101,11 @@ void hapusLetak(int letak)
     }
     sbl->next=skrg->next;
   }
+
+int main(){
+	list obj;
+	obj.buatnode(27);
+	obj.buatnode(6);
+	obj.buatnode(13);
+	obj.buatnode(18);
+}
