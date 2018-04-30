@@ -126,7 +126,7 @@ int main(){
 	obj.hapusdepan();
 	obj.tampilan();
 	cout<<"\n\n";
-	cut<<"MENGHAPUS DATA DI BELAKANG\n";
+	cout<<"MENGHAPUS DATA DI BELAKANG\n";
 	obj.hapusbelakang();
 	obj.tampilan();
 	cout<<"\n\n";
