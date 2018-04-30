@@ -108,4 +108,14 @@ int main(){
 	obj.buatnode(6);
 	obj.buatnode(13);
 	obj.buatnode(18);
+	cout<<"DATA AWAL\n";
+	obj.tampilan();
+	cout<<"\n\n";
+	cout<<"TAMBAH DATA DI BELAKANG\n";
+	obj.buatnode(12);
+	obj.tampilan();
+	cout<<"\n\n";
+	cout<<"TAMBAH DATA DI DEPAN\n";
+	obj.tambahdepan(8);
+	obj.tampilan();
 }
