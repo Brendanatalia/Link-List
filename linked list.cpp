@@ -75,3 +75,17 @@ void tampilan(){
     delete baru;
   }
 
+void hapusbelakang()
+  {
+    node *sesudah=new node;
+    node *sebelum=new node;
+    sesudah=head;
+    while(sesudah->next!=NULL)
+    {
+      sebelum=sesudah;
+      sesudah=sesudah->next;	
+    }
+    tail=sebelum;
+    sebelum->next=NULL;
+    delete sesudah;
+  }
