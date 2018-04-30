@@ -51,7 +51,7 @@ void tampilan(){
     baru->next=head;
     head=baru;
   }
-   void tambahtengah(int letak, int nilai)
+   void menyisipkandata(int letak, int nilai)
   {
     node *sebelum=new node;
     node *sesudah=new node;
@@ -118,4 +118,12 @@ int main(){
 	cout<<"TAMBAH DATA DI DEPAN\n";
 	obj.tambahdepan(8);
 	obj.tampilan();
+	cout<<"MENYISIPKAN DATA\n";
+	obj.tambahtengah(4,10);
+	obj.tampilan();
+	cout<<"\n\n";
+	cout<<"MENGHAPUS DATA DEPAN\n";
+	obj.hapusdepan();
+	obj.tampilan();
+	cout<<"\n\n";
 }
