@@ -130,4 +130,9 @@ int main(){
 	obj.hapusbelakang();
 	obj.tampilan();
 	cout<<"\n\n";
+	cout<<"MENGHAPUS DATA SESUAI LETAK\n";
+	obj.hapustengah(3);
+	obj.tampilan();
+	cout<<"\n--------------------------------------------------\n";
+	//btw, ini belom bisa dicompile
 }
