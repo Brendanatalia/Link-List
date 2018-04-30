@@ -103,7 +103,7 @@ void hapusLetak(int letak)
   }
 
 int main(){
-	list obj;
+	linkedlist obj; //kurang linkednya
 	obj.buatnode(27);
 	obj.buatnode(6);
 	obj.buatnode(13);
