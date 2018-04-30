@@ -16,7 +16,7 @@ linkedlist()
 head=NULL;
 tail=NULL;
 }
-};//kita pake head and tail aja yaa guys, oke mi, okelah mi
+//kita pake head and tail aja yaa guys, oke mi, okelah mi
 
  void buatnode(int value){ //ini tambah data di belakang gaesss
     node *baru =new node;
@@ -101,6 +101,7 @@ void hapusLetak(int letak)
     }
     sebelum->next=sesudah->next;
   }
+};
 
 int main(){
 	linkedlist obj; //kurang linkednya
@@ -118,8 +119,9 @@ int main(){
 	cout<<"TAMBAH DATA DI DEPAN\n";
 	obj.tambahdepan(8);
 	obj.tampilan();
+	cout<<"\n\n";
 	cout<<"MENYISIPKAN DATA\n";
-	obj.tambahtengah(4,10);
+	obj.menyisipkandata(4,10);
 	obj.tampilan();
 	cout<<"\n\n";
 	cout<<"MENGHAPUS DATA DEPAN\n";
@@ -134,5 +136,4 @@ int main(){
 	obj.hapustengah(3);
 	obj.tampilan();
 	cout<<"\n--------------------------------------------------\n";
-	//btw, ini belom bisa dicompile
 }
