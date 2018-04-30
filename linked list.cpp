@@ -133,7 +133,7 @@ int main(){
 	obj.tampilan();
 	cout<<"\n\n";
 	cout<<"MENGHAPUS DATA SESUAI LETAK\n";
-	obj.hapustengah(3);
+	obj.hapusLetak(3);
 	obj.tampilan();
 	cout<<"\n--------------------------------------------------\n";
 }
