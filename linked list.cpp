@@ -91,15 +91,15 @@ void hapusbelakang()
   }
 void hapusLetak(int letak)
   {
-    node *skrg=new node;
-    node *sbl=new node;
-    skrg=head;
+    node *sesudah=new node;
+    node *sebelum=new node;
+    sesudah=head;
     for(int i=1;i<letak;i++)
     {
-      sbl=skrg;
-      skrg=skrg->next;
+      sebelum=sesudah;
+      sebelum=sesudah->next;
     }
-    sbl->next=skrg->next;
+    sebelum->next=sesudah->next;
   }
 
 int main(){
